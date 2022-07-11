@@ -1,0 +1,40 @@
+{
+   "cars":[
+        {
+            "id": 1,
+            "name": "Lamborghini huracan evo",
+            "image": "honhanh/car13.jpg",
+            "price": "100.000",
+            "year": "2021",
+            "description": "Automatic",
+            "fuel": "Diesel"
+        },
+        {
+            "id": 2,
+            "name": "Audi R8",
+            "image": "honhanh/car15.jpg",
+            "price": "200.000",
+            "year": "2021",
+            "description": "Automatic",
+            "fuel": "Diesel"
+        },
+        {
+            "id": 3,
+            "name": "La Ferrari",
+            "image": "honhanh/car16.jpg",
+            "price": "300.000",
+            "year": "2021",
+            "description": "Automatic",
+            "fuel": "Diesel"
+        },
+        {
+            "id": 4,
+            "name": "McLaren",
+            "image": "honhanh/car19.jpg",
+            "price": "400.000",
+            "year": "2021",
+            "description": "Automatic",
+            "fuel": "Diesel"
+        }
+    ]
+}

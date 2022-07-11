@@ -1,291 +1,327 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Ubuntu&display=swap');
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
-html{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+html {
     scroll-behavior: smooth;
 }
-#logo{
+
+#logo {
     width: 50px;
     height: 50px;
-    position: relative;
-    top: -3px;
+    margin: 0;
+    padding: 0;
 }
-#nav{
+
+#nav {
+    display: inline-block;
+    position: fixed;
+}
+
+#nav,
+.subnav {
+    list-style-type: none;
+}
+
+#nav li {
+    position: relative;
+
+}
+
+#nav>li {
     display: inline-block;
 }
 
-#nav, .subnav{
-list-style-type: none;
-}
-#nav li{
-    position: relative;
-
-}
-#nav > li{
-    display: inline-block;
-}
-#nav > li >  a{
+#nav>li>a {
     color: white;
     text-transform: uppercase;
 }
-#nav li a{
-   
+
+#nav li a {
+
     text-decoration: none;
     font-weight: lighter;
     line-height: 50px;
     padding: 0 24px;
-    display:inline-block;
+    display: inline-block;
 }
 
 
-#nav > li:hover > a{
+#nav>li:hover>a {
     background-color: rgb(245, 72, 3);
     font-weight: bolder;
-    
+
 }
-#nav .subnav{
+
+#nav .subnav {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
+    width: 100%;
     background-color: white;
-    box-shadow:0 0 10px black ;
+    box-shadow: 0 0 10px black;
 
 }
-#nav .subnav a{
+
+#nav .subnav a {
     color: black;
     padding: 0 22px;
 }
-#nav .subnav li:hover{
+
+#nav .subnav li:hover {
     background-color: lightsteelblue;
     color: black;
-    
-}
- #nav li:hover .subnav{
-     display: block;
- }
 
-#menu{
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#menu {
     background-color: black;
     height: 50px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index:20;
-    
-   
+    z-index: 20;
+
 }
 
-#menu .search{
-color: white;
-float: right;
-
-line-height: 50px;
-padding: 0 16px;
-cursor: pointer;
+.search {
+    color: white;
+    line-height: 50px;
+    padding: 0 10px;
+    cursor: pointer;
+    float: right;
 }
 
-#menu .search:hover{
+.search:hover {
     background-color: red;
 }
 
-.buttonbar{
+.buttonbar {
     color: white;
     float: right;
-    
+    display: none;
     padding: 16px;
 }
-.imgcaro{
+
+.imgcaro {
     margin-top: 50px;
     width: 100%;
     height: 550px;
     background-size: 100%;
 }
 
-#loichao{
-position: relative;
-bottom: 5em;
-font-weight: bolder;
-font-size: 2.5em;
-width: 100%;
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-letter-spacing: 4px;
-line-height: 70px;
-text-align: center;
-color: white;
-
-}
-#loichao2{
-position: relative;
-bottom: 3.5em;
-font-weight: bolder;
-font-size: 4em;
-width: 100%;
-color: yellow;
-text-align: center;
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#loichao {
+    font-weight: bolder;
+    font-size: 2.5em;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px black;
 
 }
 
+#loichao2 {
+    font-weight: bolder;
+    font-size: 4em;
+    width: 100%;
+    color: yellow;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0 0 10px black;
 
-#noidung .content-section{
+}
+
+.loichao {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#noidung .content-section {
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 20px;
-    padding-left: 60px;
-    padding-right:60px;
-   
+    padding: 40px 0 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+
 }
-#noidung .sectionheading{
+
+#noidung .sectionheading {
+    padding: 10px 0;
     font-size: 45px;
     text-align: center;
     letter-spacing: 4px;
 }
-#noidung .sectionsub{
+
+#noidung .sectionsub {
     text-align: center;
     font-size: 17px;
     line-height: 28px;
+    letter-spacing: 1px;
 }
 
-.carimages{
+.carimages {
     width: 100%;
-    height:200px;
+    height: 200px;
 }
- .carbox a{
-     color: black;
-     font-size: 30px;
-     line-height: 28px;
-     background-color: yellow;
-     justify-content: center;
-     padding: 0;
-     height: 84px;
-     align-items: center;
-     display: flex;
-     flex-wrap: wrap;
-     font-weight: bolder;
+
+.carbox a {
+    color: black;
+    font-size: 30px;
+    line-height: 28px;
+    background-color: yellow;
+    justify-content: center;
+    padding: 0;
+    height: 84px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bolder;
     margin-top: 30px;
     text-decoration: none;
- }
+}
 
- .padding_leri{
+.padding_leri {
     padding-left: 0;
     padding-right: 0;
- }
- #Featured{
-     padding:50px 0;
-    
- }
- #Featured-list{
-     padding-bottom: 50px;
- }
- #Featured-list h3{
+}
 
-     font-weight: lighter;
-     text-align: center;
-     
- }
- #Featured-list h2{
-    
+#Featured {
+    padding: 50px 0;
+
+}
+
+#Featured-list {
+    padding-bottom: 50px;
+}
+
+#Featured-list h3 {
+
+    font-weight: lighter;
+    text-align: center;
+
+}
+
+#Featured-list h2 {
+
     font-weight: bolder;
     text-align: center;
 }
-#carfeatured{
-    margin-left: -15px;
-    margin-right: -15px;
-    margin-bottom: 40px;
-    width: 100%;
-}
 
-#carfeatured img{
+#carfeatured img {
     width: 100%;
     height: 200px;
     margin-bottom: 10px;
-  
+
 }
 
-#carfeatured h5{
+#carfeatured h5 {
+    color: white;
     font-weight: bold;
     display: block;
     width: 100%;
     text-align: center;
-   
-}
-#carfeatured li{
-    float: left;
-    list-style-type: none;
-    margin: 0.3em;
-
+    padding-bottom: 5px;
 
 }
 
-#featuredbox{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: white;
-    box-shadow:0 0 10px black;
-    overflow: hidden;
+#carfeatured .item {
+    color: white;
+    text-align: center;
+    font-size: 0.7em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
 }
 
-#featuredbox img:hover{
-opacity: 0.6;
-}
 
-#buy .js-buy-car
-{
-    text-decoration: none;
+
+.featuredbox {
+    border: none;
     background-color: black;
-    padding: 2px 6px;
+    margin-top: 16px;
+    overflow: hidden;
+    margin-left: -8px;
+    margin-right: -8px;
+
+}
+
+.featuredbox img:hover {
+    opacity: 0.6;
+}
+
+.js-buy-car {
+    text-decoration: none;
+    background-image: linear-gradient(to right, orangered, coral);
+    padding: 2px 16px;
     box-sizing: border-box;
     color: white;
     font-weight: bold;
     display: inline-block;
     border: none;
+    line-height: 20px;
+    text-align: center;
 }
 
-#buy h6{
-    padding: 4px;
+.price {
+    padding: 5px;
     color: red;
+    line-height: 20px;
+    text-align: right;
 }
 
-#buy .js-buy-car:hover{
-    
-    background-color: orangered;
+.js-buy-car:hover {
+
+    background-image: linear-gradient(to left, orangered, coral);
 }
 
-.mo{
+.mo {
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     display: none;
     align-items: center;
     justify-content: center;
     z-index: 50;
 }
 
-.mo.open{
+.mo.open {
     display: flex;
 }
 
-.mo-contaier{
+.mo-contaier {
     background-color: white;
     width: 800px;
     max-width: calc(100% - 50px);
     min-height: 200px;
     position: relative;
-   animation: mofacein ease 0.7s; 
+    animation: mofacein ease 0.7s;
 
 }
 
-.hea{
+.hea {
     background-color: rgb(228, 81, 23);
     height: 130px;
     display: flex;
@@ -295,7 +331,7 @@ opacity: 0.6;
     color: white;
 }
 
-.mo-close{
+.mo-close {
     position: absolute;
     right: 0;
     top: 0;
@@ -304,143 +340,156 @@ opacity: 0.6;
     cursor: pointer;
 }
 
-.mo-close:hover{
+.mo-close:hover {
     opacity: 0.8;
 }
 
-.mo-lable{
+.mo-lable {
     font-size: 15px;
     margin-bottom: 12px;
 }
 
-.mo-input{
-    border:1px solid lightgray;
+.mo-input {
+    border: 1px solid lightgray;
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
 }
 
-#buycar{
+#buycar {
     font-size: 15px;
     background-color: rgb(228, 81, 23);
     width: 100%;
     text-transform: uppercase;
-    padding:8px ;
+    padding: 8px;
     color: white;
     border: none;
     cursor: pointer;
     margin-top: 10px;
 }
 
-#buycar:hover{
+#buycar:hover {
     background-color: black;
 }
 
-#fter{
+#fter {
     text-align: right;
     padding: 12px;
 }
 
 @keyframes mofacein {
-    from{
+    from {
         transform: translateY(-100px);
         opacity: 0;
     }
-    to{
+
+    to {
         transform: translateY(0);
         opacity: 1;
     }
 }
+
 /* Contact*/
-.contact-content{
-margin-top: 50px;
+.contact-content {
+    margin-top: 50px;
 }
 
-#address{
+#address {
     font-size: 18px;
     line-height: 1.5;
     color: white;
     font-weight: inherit;
 }
 
-#address i{
+#address a {
+    color: white;
+    text-decoration: none;
+}
+
+#address i {
     width: 30px;
 }
 
-.mt-8{
+.mt-8 {
     margin-top: 8px !important;
 }
 
-.mt-16{
+.mt-16 {
     margin-top: 16px !important;
 }
 
-.row::after{
+.row::after {
     content: "";
     display: block;
     clear: both;
 }
 
-.contact-content .form-sub-btn{
-    background-color:orangered;
+.contact-content .form-sub-btn {
+    background-color: orangered;
     color: white;
     border: none;
     padding: 8px 16px;
     float: right;
 }
 
-.form-sub-btn:hover{
+.form-sub-btn:hover {
     opacity: 0.8;
     cursor: pointer;
 }
 
-.contact-bg{
+.contact-bg {
     background-color: black;
     padding: 16px;
     padding-bottom: 50px;
     width: 100%;
 }
 
-.map-section img{
-    width: 100%;
-    height: 600px;
+.map-section {
+    margin: 50px auto;
+    width: 1000px;
+    height: 500px;
 }
 
-footer{
-    padding: 64px 16px;
+.form-control {
+    width: 100%;
+    padding: 5px;
+}
+
+footer {
+    padding: 0px 16px 40px 16px;
     text-align: center;
 }
 
-footer .socials-list{
-    font-size: 24px;   
+footer .socials-list {
+    font-size: 24px;
 }
 
-footer .socials-list a{
-    color:lightslategray;
+footer .socials-list a {
+    color: lightslategray;
     text-decoration: none;
 }
 
-footer .socials-list a:hover{
+footer .socials-list a:hover {
     opacity: 0.6;
 }
 
-footer .copyright{
+footer .copyright {
     margin-top: 15px;
     color: lightslategray;
 }
 
-.nav__overlay{
+.nav__overlay {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     display: none;
     animation: facein linear 0.2s;
 }
 
-#nav__mobile{
+#nav__mobile {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -450,26 +499,26 @@ footer .copyright{
     max-width: 100%;
     transform: translateX(100%);
     opacity: 0;
-    transition: transform linear 0.2s ,opacity 0.5s;
+    transition: transform linear 0.2s, opacity 0.5s;
 }
 
 
-#nav__mobile__list{
-    margin-top:50px ;
+#nav__mobile__list {
+    margin-top: 50px;
     list-style: none;
 }
 
-#nav__mobile__list li a{
+#nav__mobile__list li a {
     text-decoration: none;
     color: black;
     display: block;
     padding: 10px 60px;
     font-size: 1.5em;
-    
+
 }
 
 
-#nav__mobile__list .subnav__mobile{
+#nav__mobile__list .subnav__mobile {
     display: none;
     list-style: none;
 }
@@ -478,275 +527,372 @@ footer .copyright{
     display: block;
 }
 
-.nav__mobile__close{
+.nav__mobile__close {
     font-size: 1.5em;
     position: absolute;
     right: 0;
     padding: 10px;
 }
 
-.nav__input:checked ~ .nav__overlay{
+.nav__input:checked~.nav__overlay {
     display: block;
 }
 
-.nav__input:checked ~ #nav__mobile{
+.nav__input:checked~#nav__mobile {
     transform: translateX(0);
     opacity: 1;
 }
 
-@keyframes facein{
-    from{
+@keyframes facein {
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
 
+.searchform {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    padding-right: 2px;
+    display: none;
+}
+
+.searchform button {
+    padding: 6px;
+    background-color: red;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+
+.searchform input {
+    padding: 5px;
+}
+
+.nav__search_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    animation: facein linear 0.2s;
+
+}
+
+.search_input:checked~.nav__search_overlay {
+    display: block;
+
+}
+
+.search_input:checked~.searchform {
+    display: block;
+
+}
 
 /* Mobile */
 @media only screen and (max-width: 46.1075em) {
+    .buttonbar {
+        color: white;
+        float: right;
+        display: block;
+        padding: 0px 5px;
+        line-height: 50px;
+    }
 
-    .imgcaro{
+    .imgcaro {
         width: 100%;
         height: auto;
         background-size: 100%;
     }
 
-    #loichao{
-        position: relative;
-        bottom: 8em;
+    #loichao {
         font-weight: bolder;
         font-size: 1em;
         width: 100%;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         letter-spacing: 4px;
         line-height: 70px;
         text-align: center;
         color: white;
-        
-        }
-        #loichao2{
-        position: relative;
-        bottom: 6.5em;
+
+
+    }
+
+    #loichao2 {
         font-weight: bolder;
-        font-size: 1.5em;
+        font-size: 1.2em;
         width: 100%;
         color: yellow;
         text-align: center;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        
-        }
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-        #noidung .content-section{
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-            padding-bottom: 20px;
-            padding-left: 60px;
-            padding-right:60px;
-            margin-top: -100px;
-        }
-        #noidung .sectionheading{
-            font-size: 14px;
-            text-align: center;
-            letter-spacing: 4px;
-        }
-        #noidung .sectionsub{
-            text-align: center;
-            font-size: 7px;
-            line-height: 10px;
-        }
+    }
 
-      
-        .col-mb{
-            width: 50%;
-           
-        }
+    .loichao {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
 
-        .carbox a{
-            color: black;
-            font-size: 15px;
-            line-height: 14px;
-            background-color: yellow;
-            justify-content: center;
-            padding: 0;
-            height: 84px;
-            align-items: center;
-            display: flex;
-            flex-wrap: wrap;
-            font-weight: bolder;
-           margin-top: 30px;
-           text-decoration: none;
-        }
+    #noidung .sectionheading{
+        font-size: 20px;
+    }
 
-        .row-mb{
-           margin-left: 2em;
-           margin-right: 2em;
-        }
+    #noidung .sectionsub{
+        font-size: 10px;
+        line-height:12px
+    }
 
-        .carimages{
-            width: 100%;
-            height:auto;
-        }
+    .col-mb {
+        width: 100%;
 
-        .padding-featured{
-            width: 100%;
-           margin-left: 2em;
-        }
+    }
 
-        #nav{
-            display: none;
-        
-        }
-        
-        .search{
-            display: none;
-        }
+    .carimages {
+        width: 100%;
+        height: 100px;
+    }
 
-       
+    .carbox a {
+        color: black;
+        font-size: 10px;
+        line-height: 10px;
+        background-color: yellow;
+        justify-content: center;
+        padding: 0;
+        height: 40px;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: bolder;
+        margin-top: 30px;
+        text-decoration: none;
+    }
+
+    .row-mb {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .padding_leri {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+    #noidung .content-section {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+
+    .featuredbox {
+        border: none;
+        background-color: black;
+        margin-top: 16px;
+        overflow: hidden;
+        width: 80%;
+        margin: auto;
+        margin-top: 1em;
+    }
+
+    #address {
+        font-size: 10px;
+        margin-bottom: 16px;
+    }
+
+    .form-control{
+        outline: none
+    }
+
+    .mrt-8 {
+        margin-top: 8px;
+    }
+
+    .contact-content .form-sub-btn {
+        background-color: orangered;
+        color: white;
+        border: none;
+        padding: 8px;
+        width: 100%;
+    }
+
+    #address {
+        line-height: 32px;
+    }
+
+    .form-control {
+        padding: 10px;
+    }
+
+    .socials-list {
+        font-size: 48px;
+    }
+
+    .socials-list a {
+        margin: 0 8px;
+    }
+
+    .copyright a {
+        padding: 12px 0;
+        display: inline-block;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    .map-section {
+        padding: 5px;
+        margin: 50px auto;
+        width: 100%;
+        height: auto;
+    }
+
+    footer{
+        margin-top: 10px;
+    }
+
+
 }
 
 /* tablet */
 @media only screen and (min-width:46.25em) and (max-width: 63.9375em) {
+    .buttonbar {
+        color: white;
+        float: right;
+        display: block;
+        padding: 0px 5px;
+        line-height: 50px;
 
-    .imgcaro{
+    }
+
+    .imgcaro {
         width: 100%;
         height: auto;
         background-size: 100%;
     }
 
-    #loichao{
-        position: relative;
-        bottom: 8em;
+
+    .loichao {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+
+    #loichao {
         font-weight: bolder;
         font-size: 1em;
         width: 100%;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         letter-spacing: 4px;
         line-height: 70px;
         text-align: center;
         color: white;
-        
-        }
-        #loichao2{
-        position: relative;
-        bottom: 6.5em;
+
+    }
+
+    #loichao2 {
         font-weight: bolder;
         font-size: 1.5em;
         width: 100%;
         color: yellow;
         text-align: center;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        
-        }
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-        #noidung .content-section{
-            width:80%;
-            margin-left: auto;
-            margin-right: auto;
-            padding-bottom: 20px;
-            padding-left: 60px;
-            padding-right:60px;
-            margin-top: -100px;
-        }
-        #noidung .sectionheading{
-            font-size: 14px;
-            text-align: center;
-            letter-spacing: 4px;
-        }
-        #noidung .sectionsub{
-            text-align: center;
-            font-size: 7px;
-            line-height: 10px;
-        }
+    }
 
-      
-        .col-mb{
-            width: 50%;
-           
-        }
+    .col-mb {
+        width: 50%;
 
-        .carbox a{
-            color: black;
-            font-size: 15px;
-            line-height: 14px;
-            background-color: yellow;
-            justify-content: center;
-            padding: 0;
-            height: 84px;
-            align-items: center;
-            display: flex;
-            flex-wrap: wrap;
-            font-weight: bolder;
-           margin-top: 30px;
-           text-decoration: none;
-        }
+    }
 
-        .row-mb{
-           margin-left: 2em;
-           margin-right: 2em;
-        }
+    .carbox a {
+        color: black;
+        font-size: 15px;
+        line-height: 14px;
+        background-color: yellow;
+        justify-content: center;
+        padding: 0;
+        height: 84px;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: bolder;
+        margin-top: 30px;
+        text-decoration: none;
+    }
 
-        .carimages{
-            width: 100%;
-            height:auto;
-        }
 
-        #featuredbox{
-            margin-right: 0px;
-            margin-left: 2px;
-            text-align: center;
-        }
 
-        #featuredbox img{
-            width: 100%;
-            height: 100px;
-        }
+    .featuredbox {
+        border: none;
+        background-color: black;
+        margin-top: 16px;
+        overflow: hidden;
+        margin-left: 2px;
+        margin-right: 2px;
 
-        #buy .js-buy-car
-{
-    text-decoration: none;
-    background-color: black;
-    padding: 2px 2px;
-    box-sizing: border-box;
-    color: white;
-    font-weight: bold;
-    display: inline-block;
-    border: none;
-    font-size: .8em;
-}
+    }
 
-#buy h6{
-    padding: 4px;
-    color: red;
-    font-size: .8em;
-}
+    .row-mb {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
 
-#carfeatured h5{
-    font-weight: bold;
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-size: 1em;
-   
-}
-#carfeatured li{
-    float: left;
-    list-style-type: none;
-    margin: 0.3em;
-    font-size: 0.6em;
+    .carimages {
+        width: 100%;
+        height: auto;
+    }
 
-}
 
-/*menu button*/
-#nav{
-    display: none;
+    #carfeatured li {
+        float: left;
+        list-style-type: none;
+        color: white;
+        font-size: 0.7em;
+    }
 
-}
+    #carfeatured ul {
+        width: 100%;
+    }
 
-.search{
-    display: none;
-}
+    .form-control {
+        padding: 10px;
+    }
+
+    .socials-list {
+        font-size: 48px;
+    }
+
+    .socials-list a {
+        margin: 0 8px;
+    }
+
+    .copyright a {
+        padding: 12px 0;
+        display: inline-block;
+    }
+
+
+
+
+    /*menu button*/
+    #nav {
+        display: none;
+    }
+
 
 }
